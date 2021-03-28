@@ -45,11 +45,7 @@ def initializeDB(dbeng):
 														ENV['MYSQL_PORT'],
 														ENV['MYSQL_DB']))
 	return dbeng.connect()
-	'''
-	except:
-		dbeng = -1
-		return dbeng
-	'''
+
 dbconn = initializeDB(dbeng)
 
 @app.errorhandler(InvalidUsage)
@@ -60,7 +56,7 @@ def handle_invalid_usage(error):
 
 @app.route('/auth')
 def hello_world():
-	return "Thank you for logging into JNelson's fitbit data app! \n You may close your browser";
+	return "Thank you for logging into JNelson's fitbit data app! \n You may close your browser"
 
 @app.route('/mood/send/',methods=['POST'])
 def sendMood():
