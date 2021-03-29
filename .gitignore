@@ -1,2 +1,2 @@
 init.json
-*.pyc
+__pycache__
