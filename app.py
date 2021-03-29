@@ -58,7 +58,7 @@ def handle_invalid_usage(error):
 def hello_world():
 	return "Thank you for logging into JNelson's fitbit data app! \n You may close your browser"
 
-@app.route('/mood/send/',methods=['POST'])
+@app.route('/mood/send',methods=['POST'])
 def sendMood():
 	try:
 		if 'val' in request.args:
@@ -79,7 +79,7 @@ def sendMood():
 
 	return 0
 
-@app.route('/weight/send/',methods=['POST'])
+@app.route('/weight/send',methods=['POST'])
 def sendWeight():
 	try:
 		if 'val' in request.args:
