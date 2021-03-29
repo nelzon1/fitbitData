@@ -1,0 +1,8 @@
+{
+    "API_KEY":"0000000000",
+    "MYSQL_USER":"xxxxxxxxxx",
+    "MYSQL_PW": "xxxxxxxxxx",
+    "MYSQL_ADDRESS":"mysql://{0}:{1}@localhost:{2}/{3}",
+    "MYSQL_PORT": "00000",
+    "MYSQL_DB": "xxxxxxxxxx"
+}
